@@ -21,3 +21,5 @@ Map<String, dynamic> _$PersonToJson(Person instance) => <String, dynamic>{
   'lastName': instance.lastName,
   'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
 };
+
+String _$PersongetJsonSchema() => {};

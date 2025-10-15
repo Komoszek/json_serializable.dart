@@ -6,7 +6,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'example.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(createGetJsonSchema: true)
 class Person {
   /// The generated code assumes these values exist in JSON.
   final String firstName, lastName;
@@ -24,3 +24,4 @@ class Person {
   /// Connect the generated [_$PersonToJson] function to the `toJson` method.
   Map<String, dynamic> toJson() => _$PersonToJson(this);
 }
+

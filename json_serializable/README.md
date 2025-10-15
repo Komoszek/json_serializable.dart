@@ -30,7 +30,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'example.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(createGetJsonSchema: true)
 class Person {
   /// The generated code assumes these values exist in JSON.
   final String firstName, lastName;
@@ -68,6 +68,8 @@ Map<String, dynamic> _$PersonToJson(Person instance) => <String, dynamic>{
   'lastName': instance.lastName,
   'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
 };
+
+String _$PersongetJsonSchema() => {};
 ```
 
 # Running the code generator

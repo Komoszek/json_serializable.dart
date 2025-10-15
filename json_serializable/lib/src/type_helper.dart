@@ -83,4 +83,10 @@ abstract class TypeHelper<T extends TypeHelperContext> {
     T context,
     bool defaultProvided,
   );
+
+  /// TODO: add description
+  Object? getJsonSchema(
+    DartType targetType,
+    String expression,
+    T context,);
 }

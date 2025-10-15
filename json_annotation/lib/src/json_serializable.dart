@@ -123,6 +123,9 @@ class JsonSerializable {
   /// ```
   final bool? createToJson;
 
+  /// TODO: add description
+  final bool? createGetJsonSchema;
+
   /// If `false` (the default), then the generated `FromJson` function will
   /// ignore unrecognized keys in the provided JSON [Map].
   ///
@@ -268,6 +271,7 @@ class JsonSerializable {
     this.createJsonKeys,
     this.createFactory,
     this.createToJson,
+    this.createGetJsonSchema,
     this.disallowUnrecognizedKeys,
     this.explicitToJson,
     this.fieldRename,
